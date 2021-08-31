@@ -7,15 +7,17 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
+import fetchedData from './hooks/fetchedData';
 
 function App() {
+  fetchedData();
   return (
     <div className="App"> 
     <Router>
       <NavBar />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home data ={fetchedData}/>
         </Route>
         <Route path ="/about">
           <About />
