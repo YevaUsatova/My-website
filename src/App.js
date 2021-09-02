@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
+import NewProjects from './components/NewProjects';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         <Route path ="/about">
           <About />
         </Route>
-        <Route path="/projects">
+        <Route exact path="/projects">
           <Projects />
         </Route>
         <Route path="/education">
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/experience">
           <Experience />
+        </Route>
+        <Route exact path="/addproject">
+          <NewProjects />
         </Route>
       </Switch>
     </Router>

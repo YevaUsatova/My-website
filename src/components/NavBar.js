@@ -9,6 +9,7 @@ function NavBar (){
         <Link to="/education">My Education</Link>;
         <Link to= "/experience">My Work Experience</Link>
         <Link to="/projects">My Projects</Link>
+        <Link to="/addproject">Add New Project</Link>
     </nav>
     )
 }
