@@ -10,18 +10,16 @@ function Projects (){
             setProject(data)
         })  
     },[])   
-    const projectsC = project.map((data)=> <li key= {data.c}>{data.c.join('\n')} </li>)
-    const projectsP = project.map((data)=> <li key= {data.python}> {data.python.join('\n')}</li>)
+    const projectsC = project.map((data)=> <li key= {data.id}>{data.name} {data.code.join('\n')} </li>)
+  
     return(
         
     <div> 
-        <NewProjects projects={setProject}/>
+        
         <ul>
-            C ++ Program {projectsC}
+             {projectsC}
         </ul>
-        <ul>
-           Python Program {projectsP}
-        </ul>
+        
         
     </div>
     )
