@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import NewProjects from "./NewProjects";
+
 
 function Projects (){
     const[ project, setProject]= useState([])
