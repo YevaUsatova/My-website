@@ -3,3 +3,12 @@
   white-space: pre-wrap;
 
 }
+.navbar{
+  overflow: hidden;
+  background-color: #94dafa;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration-color: blue;
+  font-size: 17px;
+}
