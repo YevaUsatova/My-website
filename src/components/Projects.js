@@ -10,13 +10,13 @@ function Projects (){
             setProject(data)
         })  
     },[])   
-    const projectsC = project.map((data)=> <li key= {data.id}>{data.name} {data.code.join('\n')} </li>)
+    const projectsC = project.map((data)=> <li id="project" key= {data.id}>Name of the language: {data.name} <br/> {data.code.join('\n')} </li>)
   
     return(
         
     <div> 
         
-        <ul>
+        <ul id="bear">
              {projectsC}
         </ul>
         

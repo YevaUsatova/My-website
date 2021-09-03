@@ -62,3 +62,19 @@ p {
   background-image: url("https://st.depositphotos.com/3093825/3994/i/600/depositphotos_39948293-stock-photo-cute-grey-raccoon.jpg");
   height: 1000px;
 }
+#project {
+  list-style-type: none;
+  font-weight: bold;
+  color:rgb(17, 19, 19);
+  border: 1px solid rgb(86, 107, 121);
+  margin: auto;
+  height: auto;
+  padding: 15px;
+  margin-left: 40%;
+}
+#bear {
+  margin: auto;
+  background-size: cover;
+  height: 2000px;
+  background-image: url("https://images.wallpaperscraft.com/image/polar_bear_bear_funny_172265_1350x2400.jpg");
+}
