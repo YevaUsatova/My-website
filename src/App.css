@@ -78,3 +78,9 @@ p {
   height: 2000px;
   background-image: url("https://images.wallpaperscraft.com/image/polar_bear_bear_funny_172265_1350x2400.jpg");
 }
+#snake {
+  margin: auto;
+  background-size: cover;
+  height: 1000px;
+  background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701202474.jpg")
+}

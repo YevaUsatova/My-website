@@ -28,7 +28,7 @@ function NewProjects (){
     }
 
     return (
-        <form onSubmit={handleSubmit}> 
+        <form id="snake" onSubmit={handleSubmit}> 
             <input
             type="text" 
             onChange={handleChange}
