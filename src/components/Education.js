@@ -9,11 +9,11 @@ function Education (){
              setSchool(data)       
         })
     },[])
-    const listOfSchools= school.map((list)=> <li key={list.id}>{list.name} 
-    {list.year} {list.faculty} {list.degree}</li>)
+    const listOfSchools= school.map((list)=> <li id="school" key={list.id}>Name of the School: {list.name} <br/> 
+    Progress: {list.year} <br/> Faculty: {list.faculty} <br/> Degree: {list.degree}</li>)
     return(
     <div> 
-        <ul>
+        <ul id="book">
             {listOfSchools}
         </ul>
     </div>

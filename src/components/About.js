@@ -12,7 +12,10 @@ function About (){
         })
     },[])
     return(
-    <h3> {data}</h3>
+        <div id="about">
+            <p> {data}</p>
+        </div>
+    
     )
 }
 export default About;

@@ -9,11 +9,11 @@ function Experience (){
              setJob(data)       
         })
     },[])
-    const listJobs= job.map((list)=> <li key={list.id}>{list.company} 
-    {list.location} {list.position} {list.year} {list.duties} </li>)
+    const listJobs= job.map((list)=> <li id="school" key={list.id}>Company: {list.company} <br/>
+    Location: {list.location} <br/> Position: {list.position} <br/> Year: {list.year} <br/> Duties: {list.duties} </li>)
     return (
     <div> 
-        <ul>
+        <ul id="job">
             {listJobs}
         </ul>
 
