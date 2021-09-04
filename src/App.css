@@ -41,7 +41,7 @@ p {
   padding:30px;
   font-family: "Lucida Console", "Courier New", monospace;
   font-weight: bold;
-  color: white;
+  color: rgb(186, 227, 247);
 }
 #school {
   list-style-type: none;
