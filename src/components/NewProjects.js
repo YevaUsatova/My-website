@@ -29,18 +29,22 @@ function NewProjects (){
 
     return (
         <form id="snake" onSubmit={handleSubmit}> 
-            <input
+            <label id="labels">Language name </label>
+            <br/>
+            <input id ="text"
             type="text" 
             onChange={handleChange}
-            placeholder="Language name" 
             value={name}
             />
-            <textarea
+            <br/>
+            <label id="labels">Code goes here...</label>
+            <br/>
+            <textarea id="text"
             onChange ={handleCodeChange}
-            placeholder="Code goes here..."
             value={newCode}
             />
-            <button >Add new project</button>
+            <br/>
+            <button id="button" >Add new project</button>
         </form>
     )
 }
