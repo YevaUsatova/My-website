@@ -1,3 +1,7 @@
+# About this project
+
+This project contains 7 components that are geting and sending data to JSON file. It uses several React hooks such as useState and useHistory. Every component has separate link that can be reached by clicking on it in NavBar. 
+This is a rough scatch of my personal website. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
