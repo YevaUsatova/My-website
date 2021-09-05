@@ -32,16 +32,16 @@ function NewProjects (){
             <label id="labels">Language name </label>
             <br/>
             <input id ="text"
-            type="text" 
-            onChange={handleChange}
-            value={name}
+                type="text" 
+                onChange={handleChange}
+                value={name}
             />
             <br/>
             <label id="labels">Code goes here...</label>
             <br/>
             <textarea id="text"
-            onChange ={handleCodeChange}
-            value={newCode}
+                onChange ={handleCodeChange}
+                value={newCode}
             />
             <br/>
             <button id="button" >Add new project</button>
