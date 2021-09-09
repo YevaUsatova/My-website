@@ -1,12 +1,10 @@
 import React, {useState} from "react"
-import {useHistory} from "react-router-dom"
-
+import {useHistory} from "react-router-dom";
 
 function NewProjects (){
     const [name, setName]= useState(" ")
     const [newCode, setNewCode]= useState(" ")
-    const history= useHistory() 
-
+    const history= useHistory()  
     function handleSubmit(e){
         e.preventDefault()
         fetch("http://localhost:3000/projects", {
@@ -15,9 +13,10 @@ function NewProjects (){
             body: JSON.stringify({name, code: newCode.split("\n")})
         })
         .then((r)=>r.json())
-        .then((data)=>console.log(data))
+        .then((data)=>console.log( data))
         history.push("/projects")
     }
+    
 
     function handleChange(event){
         setName(event.target.value)

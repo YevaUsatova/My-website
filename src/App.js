@@ -8,10 +8,14 @@ import Experience from "./components/Experience";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import NewProjects from './components/NewProjects';
-
+import useFetchedState from './hooks/useFetchedState';
 
 function App() {
-    return (
+  const[ school, setSchool]= useFetchedState([], "http://localhost:3000/education")
+  const [job, setJob]=useFetchedState([], "http://localhost:3000/work")
+  //const[ data, setData]= useFetchedState(' ', "http://localhost:3000/about")
+   
+  return (
     <div className="App"> 
     <Router>
       <NavBar />
@@ -20,16 +24,16 @@ function App() {
           <Home />
         </Route>
         <Route path ="/about">
-          <About />
+          <About  />
         </Route>
         <Route exact path="/projects">
-          <Projects />
+          <Projects  />
         </Route>
         <Route path="/education">
-          <Education />
+          <Education school={school} setSchool={setSchool} />
         </Route>
         <Route path="/experience">
-          <Experience />
+          <Experience job={job} setJob={setJob} />
         </Route>
         <Route exact path="/addproject">
           <NewProjects />
