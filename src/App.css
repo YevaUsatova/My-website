@@ -1,102 +1,129 @@
 .App {
   text-align: center;
   white-space: pre-wrap;
-
+  height: 100%;
 }
-.navbar{
-  border: 2px solid black;
-  overflow: hidden;
-  background-color: #94dafa;
-  color: #f2f2f2;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(9, 60, 83);
+  }
+li{
+  float: left;
+}
+
+ #link  {
+  
+  display: block;
+  color: rgb(34, 171, 235);
   text-align: center;
   padding: 14px 16px;
-  text-decoration-color: blue;
-  font-size: 17px;
-}
-#wall {
+  text-decoration: none;
+  }
+
+  .active {
+    background-color: #830539;
+  }
+
+#home {
   padding-top: 14px;
-  background-image: url("https://wallpapercave.com/uwp/uwp1370075.webp");
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
-  height: 1000px;
-  background-position: center;
+  background-repeat: no-repeat;
+  height: 580px;
+  
   
 }
-#wall .name{
+#home .name{
   text-shadow: 2px 2px 5px red;
   font-family: Georgia, serif;
   font-size: 60px;
 }
 #about {
   margin: auto;
-  background-image: url("https://www.backgroundscool.com/wp-content/uploads/2019/04/wolf_predator_howl_photoshop_116891_938x1668-576x1024.jpg");
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   padding-top:50px;
   background-size: cover;
-  height: 1000px;
-  text-align: justify; 
+  height: 545px;
 }
-p {
+#text {
   text-indent: 50px;
-  text-align: justify;
-  border: 2px solid rgb(4, 0, 12);
-  padding:30px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgb(186, 227, 247);
+  text-shadow: 2px 2px 5px rgb(12, 140, 224);
 }
 #school {
-  list-style-type: none;
+  padding-top: 140px;
   width: 400px;
   height: 180px;
   font-weight: bold;
-  color:rgb(8, 73, 73)
+  color:rgb(93, 194, 194)
+}
+#button:hover {
+  background-color: aqua;
+}
+#button{
+  width: 20%;
+  background-color: #0f98b1;
+  color: rgb(5, 43, 48);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #book {
   margin: auto;
   background-size: cover;
-  background-image: url("https://media.istockphoto.com/photos/eagle-owl-bubo-bubo-picture-id1156294981?k=20&m=1156294981&s=612x612&w=0&h=70pyKihx_2vobm9emEIErS54rhn7NJFgtmQfwr8Cw4A=");
-  height: 1000px;
+  background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 595px;
 }
 #job {
   margin: auto;
   background-size: cover;
-  background-image: url("https://st.depositphotos.com/3093825/3994/i/600/depositphotos_39948293-stock-photo-cute-grey-raccoon.jpg");
-  height: 1000px;
+  background-image: url("https://images.pexels.com/photos/2086917/pexels-photo-2086917.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 595px;
 }
 #project {
   list-style-type: none;
   font-weight: bold;
-  color:rgb(17, 19, 19);
-  border: 1px solid rgb(86, 107, 121);
-  margin: auto;
+  color:rgb(92, 211, 247);
+  margin:right;
   height: auto;
   padding: 15px;
-  margin-left: 40%;
+  
 }
 #bear {
+  padding-top: 15px;
   margin: auto;
   background-size: cover;
-  height: 2000px;
-  background-image: url("https://images.wallpaperscraft.com/image/polar_bear_bear_funny_172265_1350x2400.jpg");
+  height: 580px;
+  background-image: url("https://images.pexels.com/photos/2104053/pexels-photo-2104053.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 #snake {
   margin: auto;
   background-size: cover;
-  height: 1000px;
-  background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701202474.jpg")
+  height: 590px;
+  background-image: url("https://images.pexels.com/photos/1671630/pexels-photo-1671630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
 }
 #snake #text {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  background-color: rgb(134, 199, 243);
+  background-color: rgb(158, 208, 241);
   border-radius: 4px;
   height:50px;
 }
 
 #snake #button {
   width: 50%;
-  background-color: #a3ced6;
+  background-color: #43c0d6;
   color: rgb(14, 56, 61);
   padding: 14px 20px;
   margin: 8px 0;
@@ -106,6 +133,7 @@ p {
   
 }
 #labels{
-  color: rgb(55, 208, 247);
+  
+  color: rgb(15, 169, 207);
   font-weight: bold;
 }

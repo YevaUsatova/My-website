@@ -11,7 +11,8 @@ function About (){
     },[])
     return(
         <div id="about">
-            <p> {data}</p>
+            <h2 id="text">About me...</h2>
+            <p id="text"> {data}</p>
         </div>
     
     )
